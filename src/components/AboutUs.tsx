@@ -4,9 +4,10 @@ import { ABOUTUS_LIST } from "@/utils/helper";
 
 const AboutUs = () => {
     return (
-        <div className="bg-[#0A0A2B]">
+        <div className="bg-[#0A0A2B] pt-[84px] relative">
+            <Image src='/assets/images/svg/black-circle.svg' alt="black-circle" width={24} height={24} className="absolute top-[14px] left-0"/>
             <div className="max-w-[1141px] mx-auto">
-        <div className="flex items-center max-xl:flex-wrap">
+        <div className="flex items-center max-lg:flex-wrap gap-16 max-lg:gap-10 px-4">
                 <div className="w-6/12 max-lg:w-full">
                     <div className="relative">
                         <h2 className="text-5xl leading-[57.6px] font-[900] text-white max-xl:text-4xl max-lg:text-3xl ">About Us</h2>
@@ -23,7 +24,7 @@ const AboutUs = () => {
                         </div>
           </div>
         <div className="w-6/12 max-lg:w-full">
-                        
+                <Image src='/assets/images/webp/about-us-img.webp' width={621} height={478} alt="smerse" className="object-contain"/>
           </div>
                 </div>
                 </div>
