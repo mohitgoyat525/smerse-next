@@ -2,20 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+.btn-garident{
+  background: linear-gradient(180deg, #952FFE 10.3%, #C641C6 44.39%, #FF676B 76.15%);
+  box-shadow: 0px 4px 4px 0px #FF676B33 inset;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
