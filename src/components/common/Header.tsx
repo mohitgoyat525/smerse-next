@@ -29,7 +29,7 @@ const Header = () => {
   }, [open]);
 
   return (
-    <div className=" !mx-auto w-full bg-black/50 fixed py-4 max-md:py-0 top-0 z-50 max-lg:px-4 ">
+    <div className=" !mx-auto w-full bg-black/50 fixed py-4 max-md:py-0 top-0 z-50 max-xl:px-4 ">
       <div className="container mx-auto flex items-center justify-between max-w-[1140px] bg-transparent">
         <a href="">
           <Image
