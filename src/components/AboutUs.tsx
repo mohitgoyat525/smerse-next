@@ -5,7 +5,7 @@ import CustomHeading from "./common/CustomHeading";
 
 const AboutUs = () => {
     return (
-        <div className="bg-[#0A0A2B] pt-[84px] relative">
+        <div className="bg-[#0A0A2B] pt-[84px] relative max-lg:pt-24 max-md:pt-[60px]">
             <Image src='/assets/images/svg/black-circle.svg' alt="black-circle" width={24} height={24} className="absolute top-[14px] left-0"/>
             <div className="max-w-[1141px] mx-auto">
         <div className="flex items-center max-lg:flex-wrap gap-16 max-lg:gap-10 px-4">
@@ -25,7 +25,7 @@ const AboutUs = () => {
                         </div>
           </div>
         <div className="w-6/12 max-lg:w-full">
-                <Image src='/assets/images/webp/about-us-img.webp' width={621} height={478} alt="smerse" className="object-contain"/>
+                <Image src='/assets/images/webp/about-us-img.webp' width={621} height={478} alt="smerse" className="object-cover pointer-events-none max-lg:mx-auto"/>
           </div>
                 </div>
                 </div>

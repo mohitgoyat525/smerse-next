@@ -23,11 +23,11 @@ const Hero = () => {
             SMERSE
           </span>
         </div>
-        <p className="font-semibold text-white uppercase leading-[54px] tracking-[6%] text-center text-4xl max-w-[637px] mx-auto max-md:text-xl">
+        <p className="font-semibold text-white uppercase leading-[54px] text-center text-4xl max-w-[637px] mx-auto max-md:text-xl max-md:pt-7">
           FOR A WHEALTHIER LIFESTYLE. ANYTIME, ANYWHERE
         </p>
         <div className=" pt-[44px] pb-[55px]">
-          <button className="min-w-[172px] h-[56px] border font-extrabold text-2xl leading-6 border-solid border-transparent rounded-lg text-white btn-garident mx-auto flex items-center justify-center">
+          <button className="min-w-[172px] max-md:min-w-[134px] max-md:text-base h-[56px] border font-extrabold text-2xl leading-6 border-solid border-transparent rounded-lg text-white btn-garident mx-auto flex items-center justify-center">
             Get Started
           </button>
         </div>

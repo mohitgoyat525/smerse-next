@@ -31,9 +31,15 @@ const Header = () => {
   return (
     <div className=" !mx-auto w-full bg-black/50 relative z-50 max-lg:px-4">
       <div className="container mx-auto flex items-center justify-between max-w-[1140px] ">
-              <a href="">
-                  <Image src='/assets/images/webp/page-logo.webp' width={68} height={68} alt="page-logo" className="object-cover"/>
-              </a>
+        <a href="">
+          <Image
+            src="/assets/images/webp/page-logo.webp"
+            width={68}
+            height={68}
+            alt="page-logo"
+            className="object-cover"
+          />
+        </a>
         <div
           className={`flex gap-[55px] max-xl:gap-10 max-lg:fixed max-lg:top-0 max-lg:-right-full max-lg:h-full max-lg:w-full max-lg:justify-center max-lg:items-center transition-all duration-300 max-lg:flex-col max-lg:bg-black max-lg:z-10 ${
             open ? "max-lg:!right-0" : ""
@@ -53,13 +59,13 @@ const Header = () => {
           </div>
           <button
             onClick={closeHandler}
-            className="text-white hidden max-md:block p-[11px_23px_11px_25px] bg-gradient-to-t to-light-purple via-light-pink from-light-orange text-xl font-extrabold leading-6 tracking-[6%] rounded-lg transition-all duration-300 "
+            className="text-white hidden max-md:block p-[11px_23px_11px_25px] bg-gradient-to-t to-light-purple via-light-pink from-light-orange text-xl font-extrabold leading-6 rounded-lg transition-all duration-300 h-[53px] hover:scale-110 min-w-[156px] "
           >
             Mint Now
           </button>
           <button
             onClick={closeHandler}
-            className="text-white max-md:hidden p-[11px_23px_11px_25px] bg-gradient-to-t to-light-purple via-light-pink from-light-orange text-xl font-extrabold leading-6 tracking-[6%] rounded-lg transition-all duration-300 "
+            className="text-white max-md:hidden p-[11px_23px_11px_25px] bg-gradient-to-t to-light-purple via-light-pink from-light-orange text-xl font-extrabold leading-6 min-w-[156px] h-[53px] rounded-lg transition-all duration-300 hover:scale-110 "
           >
             Mint Now
           </button>
@@ -67,7 +73,7 @@ const Header = () => {
         <div className="flex items-center justify-center gap-10 lg:hidden">
           <button
             onClick={closeHandler}
-            className="text-white max-md:hidden lg:hidden p-[11px_23px_11px_25px] bg-gradient-to-t to-light-purple via-light-pink from-light-orange text-xl font-extrabold leading-6 tracking-[6%] rounded-lg transition-all duration-300 "
+            className="text-white max-md:hidden lg:hidden p-[11px_23px_11px_25px] bg-gradient-to-t to-light-purple via-light-pink from-light-orange text-xl font-extrabold leading-6 min-w-[156px] h-[53px] rounded-lg transition-all duration-300 hover:scale-110 "
           >
             Mint Now
           </button>
