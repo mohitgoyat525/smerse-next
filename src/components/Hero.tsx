@@ -27,7 +27,7 @@ const Hero = () => {
           FOR A WHEALTHIER LIFESTYLE. ANYTIME, ANYWHERE
         </p>
         <div className=" pt-[44px] pb-[55px]">
-          <button className="min-w-[172px] max-md:min-w-[134px] max-md:text-base h-[56px] border font-extrabold text-2xl leading-6 border-solid border-transparent rounded-lg text-white btn-garident mx-auto flex items-center justify-center">
+          <button className="min-w-[172px] max-md:min-w-[134px] max-md:text-base h-[56px] border font-extrabold text-2xl leading-6 border-solid border-transparent rounded-lg text-white btn-garident mx-auto flex items-center justify-center transition-all ease-linear duration-300 hover:scale-105">
             Get Started
           </button>
         </div>
