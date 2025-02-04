@@ -3,7 +3,9 @@ import Header from '../components/common/Header'
 import Image from 'next/image';
 const Hero = () => {
   return (
-    <div className="bg-cover bg-no-repeat bg-center bg-hero-bg-img max-xl:bg-hero-bg-img-xl max-md:bg-hero-bg-img-md">
+    <div className="bg-cover bg-no-repeat bg-center bg-hero-bg-img max-xl:bg-hero-bg-img-xl max-md:bg-hero-bg-img-md relative">
+      <Image src='/assets/images/webp/hero-top-shadow.webp' alt='shadow' width={164} height={164} className='object-cover absolute top-0 left-0'/>
+      <Image src='/assets/images/webp/hero-bottom-shadow.webp' alt='shadow' width={164} height={164} className='object-cover absolute bottom-0 right-0'/>
       <Header />
       <div className="container px-4 mx-auto">
         <Image
