@@ -21,7 +21,7 @@ const CustomHeading: React.FC<CustomHeadingProps> = ({
         {textOne}
       </h1>
       <span
-        className={`${myClassTwo} absolute max-md:text-4xl max-md:leading-[43.2px] inset-0 text-[48px] leading-[120%] font-black bg-gradient-to-t to-light-purple via-light-pink from-light-orange bg-clip-text text-transparent tracking-[6px] top-[-2.5%] -translate-x-[1px]`}
+        className={`${myClassTwo} absolute max-md:text-4xl max-md:leading-[43.2px] inset-0 text-[48px] leading-[120%] font-black bg-gradient-to-t to-light-purple via-light-pink from-light-orange bg-clip-text text-transparent tracking-[6px] max-md:tracking-[8px] -translate-x-0.5 max-md:-translate-x-[3px] max-md:top-[-2.5%] max-md:left-[3.5px]`}
       >
         {textTwo}
       </span>

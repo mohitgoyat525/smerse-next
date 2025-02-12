@@ -13,5 +13,8 @@ body {
 .btn-garident{
   background: linear-gradient(180deg, #952FFE 10.3%, #C641C6 44.39%, #FF676B 76.15%);
   box-shadow: 0px 4px 4px 0px #FF676B33 inset;
+}
 
+.number-box-bg{
+background: linear-gradient(180deg, rgba(149, 47, 254, 0.5) 10.3%, rgba(198, 65, 198, 0.5) 44.39%, rgba(255, 103, 107, 0.5) 76.15%);
 }
