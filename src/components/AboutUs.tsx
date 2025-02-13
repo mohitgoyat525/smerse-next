@@ -6,7 +6,7 @@ import CustomHeading from "./common/CustomHeading";
 const AboutUs = () => {
     return (
         <div className="bg-[#0A0A2B] pt-[84px] relative max-lg:pt-24 max-md:pt-[60px]">
-            <Image src='/assets/images/svg/black-circle.svg' alt="black-circle" width={24} height={24} className="absolute top-[14px] left-0"/>
+            <Image src='/assets/images/svg/black-circle.svg' alt="black-circle" width={24} height={24} className="absolute top-[14px] left-0 pointer-events-none"/>
             <div className="max-w-[1141px] mx-auto">
         <div className="flex items-center max-lg:flex-wrap gap-16 max-lg:gap-10 px-4">
                 <div className="w-6/12 max-lg:w-full">
@@ -16,7 +16,7 @@ const AboutUs = () => {
                             {ABOUTUS_LIST.map((obj, i) => (
                                 <div key={i}>
                                     <div className="flex gap-5 max-xl:my-4">
-                                        <Image src={obj.icon} width={29} height={29} alt="icons" className="w-full max-w-[39px] h-full"/>
+                                        <Image src={obj.icon} width={29} height={29} alt="icons" className="w-full max-w-[39px] h-full pointer-events-none"/>
                                         <p className="text-white font-normal text-base leading-6 max-w-[510px] max-xl:max-w-none pt-2 max-md:pt-0">{obj.description}</p>
                                     </div>
                                     </div>
