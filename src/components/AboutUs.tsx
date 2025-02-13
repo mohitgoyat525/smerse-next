@@ -15,9 +15,9 @@ const AboutUs = () => {
                         <div className="pt-[25px]">
                             {ABOUTUS_LIST.map((obj, i) => (
                                 <div key={i}>
-                                    <div className="flex items-center gap-5 max-xl:my-4">
-                                        <Image src={obj.icon} width={29} height={29} alt="icons" className="w-full max-w-[39px]"/>
-                                        <p className="text-white font-normal text-base leading-6 max-w-[510px] max-xl:max-w-none">{obj.description}</p>
+                                    <div className="flex gap-5 max-xl:my-4">
+                                        <Image src={obj.icon} width={29} height={29} alt="icons" className="w-full max-w-[39px] h-full"/>
+                                        <p className="text-white font-normal text-base leading-6 max-w-[510px] max-xl:max-w-none pt-2 max-md:pt-0">{obj.description}</p>
                                     </div>
                                     </div>
                             ))}

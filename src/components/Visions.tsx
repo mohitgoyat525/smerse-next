@@ -8,7 +8,7 @@ const Visions = () => {
       <div className="flex items-center justify-center max-md:pb-10">
         <CustomHeading textOne="THE VISION" textTwo="THE VISION" />
       </div>
-      <div className="flex items-center mx-auto justify-center gap-5 max-md:gap-10 flex-wrap mt-[90px] max-md:mt-10 max-lg:justify-start max-md:justify-center">
+      <div className="flex items-center mx-auto justify-center gap-5 max-md:gap-10 flex-wrap mt-[90px] max-md:mt-10">
         {VISION_LIST.map((obj, i) => (
           <div
             key={i}
