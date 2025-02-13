@@ -3,7 +3,7 @@ import Header from '../components/common/Header'
 import Image from 'next/image';
 const Hero = () => {
   return (
-    <div className="bg-cover bg-no-repeat bg-center bg-hero-bg-img max-xl:bg-hero-bg-img-xl max-md:bg-hero-bg-img-md relative lg:pt-[152px] sm:pt-[179px] pt-[163px]">
+    <div id='home' className="bg-cover bg-no-repeat bg-center bg-hero-bg-img max-xl:bg-hero-bg-img-xl max-md:bg-hero-bg-img-md relative lg:pt-[152px] sm:pt-[179px] pt-[163px]">
       <Header />
       <Image
         src="/assets/images/webp/hero-top-shadow.webp"
@@ -40,7 +40,7 @@ const Hero = () => {
           FOR A WHEALTHIER LIFESTYLE. ANYTIME, ANYWHERE
         </p>
         <div className=" pt-[44px] pb-[55px]">
-          <button className="min-w-[172px] max-md:min-w-[134px] max-md:text-base h-[56px] border font-extrabold text-2xl leading-6 border-solid border-transparent rounded-lg text-white btn-garident mx-auto flex items-center justify-center transition-all ease-linear duration-300 hover:scale-105">
+          <button className="min-w-[172px] max-md:min-w-[134px] max-md:h-[44px] max-md:text-base h-[56px] border font-extrabold text-2xl leading-6 border-solid border-transparent rounded-lg text-white btn-garident mx-auto flex items-center justify-center transition-all ease-linear duration-300 hover:scale-105">
             Get Started
           </button>
         </div>

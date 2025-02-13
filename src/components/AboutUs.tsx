@@ -6,13 +6,6 @@ import CustomHeading from "./common/CustomHeading";
 const AboutUs = () => {
     return (
       <div className="bg-[#0A0A2B] pt-[84px] relative max-lg:pt-24 max-md:pt-[60px]">
-        <Image
-          src="/assets/images/svg/black-circle.svg"
-          alt="black-circle"
-          width={24}
-          height={24}
-          className="absolute top-[14px] left-0 pointer-events-none"
-        />
         <div className="max-w-[1141px] mx-auto">
           <div className="flex items-center max-lg:flex-wrap gap-16 max-lg:gap-10 px-4">
             <div className="w-6/12 max-lg:w-full">

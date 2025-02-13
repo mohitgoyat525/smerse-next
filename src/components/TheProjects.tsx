@@ -5,7 +5,10 @@ import Image from 'next/image';
 
 const TheProjects = () => {
   return (
-    <div className="max-xl:px-4 pt-[130px] max-lg:pt-[140px] max-md:pt-[67px] max-w-[1140px] mx-auto">
+    <div
+      id="project"
+      className="max-xl:px-4 pt-[130px] max-lg:pt-[140px] max-md:pt-[67px] max-w-[1140px] mx-auto"
+    >
       <div className="flex items-center max-lg:flex-wrap gap-16 max-lg:gap-10">
         <div className="w-6/12 max-lg:w-full">
           <CustomHeading textOne="The Projects" textTwo="The Projects" />

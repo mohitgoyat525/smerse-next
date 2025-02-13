@@ -5,6 +5,8 @@ import Image from "next/image";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false); 
+
   const handleClick = () => {
     setOpen(!open);
   };
@@ -12,6 +14,21 @@ const Header = () => {
   const closeHandler = () => {
     setOpen(false);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const handleOverflow = () => {
@@ -29,7 +46,11 @@ const Header = () => {
   }, [open]);
 
   return (
-    <div className=" !mx-auto w-full bg-black/50 fixed py-4 max-md:py-0 top-0 z-50 max-xl:px-4 ">
+    <div
+      className={`!mx-auto w-full fixed py-4 max-md:py-0 top-0 z-50 max-xl:px-4 transition-all duration-300 ${
+        scrolled ? "bg-black" : "bg-black/50"
+      }`}
+    >
       <div className="container mx-auto flex items-center justify-between max-w-[1140px] bg-transparent">
         <a href="">
           <Image
@@ -59,13 +80,13 @@ const Header = () => {
           </div>
           <button
             onClick={closeHandler}
-            className="text-white hidden max-md:block p-[11px_23px_11px_25px] bg-gradient-to-t to-light-purple via-light-pink from-light-orange text-xl font-extrabold leading-6 rounded-lg transition-all duration-300 h-[53px] hover:scale-110 min-w-[156px] "
+            className="text-white hidden max-md:block p-[11px_23px_11px_25px] bg-gradient-to-t to-light-purple via-light-pink from-light-orange text-xl font-extrabold leading-6 rounded-lg transition-all duration-300 h-[53px] hover:scale-110 min-w-[156px]"
           >
             Mint Now
           </button>
           <button
             onClick={closeHandler}
-            className="text-white max-md:hidden p-[11px_23px_11px_25px] bg-gradient-to-t to-light-purple via-light-pink from-light-orange text-xl font-extrabold leading-6 min-w-[156px] h-[53px] rounded-lg transition-all duration-300 hover:scale-110 "
+            className="text-white max-md:hidden p-[11px_23px_11px_25px] bg-gradient-to-t to-light-purple via-light-pink from-light-orange text-xl font-extrabold leading-6 min-w-[156px] h-[53px] rounded-lg transition-all duration-300 hover:scale-110"
           >
             Mint Now
           </button>
@@ -73,17 +94,17 @@ const Header = () => {
         <div className="flex items-center justify-center gap-10 lg:hidden">
           <button
             onClick={closeHandler}
-            className="text-white max-md:hidden lg:hidden p-[11px_23px_11px_25px] bg-gradient-to-t to-light-purple via-light-pink from-light-orange text-xl font-extrabold leading-6 min-w-[156px] h-[53px] rounded-lg transition-all duration-300 hover:scale-110 "
+            className="text-white max-md:hidden lg:hidden p-[11px_23px_11px_25px] bg-gradient-to-t to-light-purple via-light-pink from-light-orange text-xl font-extrabold leading-6 min-w-[156px] h-[53px] rounded-lg transition-all duration-300 hover:scale-110"
           >
             Mint Now
           </button>
           <button
             onClick={handleClick}
-            className="flex flex-col items-center justify-between relative z-20 overflow-hidden h-5 w-6 lg:hidden"
+            className="flex flex-col items-center justify-between relative z-20 overflow-hidden h-5 w-6 lg:hidden max-md:w-[14px] max-md:h-[11px]"
           >
             <span
               className={`w-6 h-0.5 transition-all duration-300 bg-white rounded-lg ${
-                open ? " translate-x-10" : ""
+                open ? "translate-x-10" : ""
               }`}
             ></span>
             <span

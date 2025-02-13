@@ -4,7 +4,7 @@ import { VISION_LIST } from "@/utils/helper";
 
 const Visions = () => {
   return (
-    <div className="max-xl:px-4 pt-[78px]">
+    <div id="vision" className="max-xl:px-4 pt-[78px]">
       <div className="flex items-center justify-center max-md:pb-10">
         <CustomHeading textOne="THE VISION" textTwo="THE VISION" />
       </div>
