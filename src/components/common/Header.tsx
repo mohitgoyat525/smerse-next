@@ -37,7 +37,7 @@ const Header = () => {
             width={68}
             height={68}
             alt="page-logo"
-            className="object-cover"
+            className="object-cover max-md:max-w-10 max-md:py-[5px]"
           />
         </a>
         <div
