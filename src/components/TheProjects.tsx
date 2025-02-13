@@ -18,7 +18,7 @@ const TheProjects = () => {
                     width={29}
                     height={29}
                     alt="icons"
-                    className="w-full max-w-[39px] h-full pointer-events-none"
+                    className="w-full max-w-[39px] h-full pointer-events-none mt-2 max-md:mt-0"
                   />
                   <p className="text-white font-normal text-base leading-6 max-w-[510px] max-xl:max-w-none pt-2 max-md:pt-0">
                     {obj.description}
